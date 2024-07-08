@@ -10,7 +10,7 @@ body {
   height: 100vh;
   color: #fff;
 }
-  
+ 
 .container {
   background: rgba(15, 5, 0, 0.753);
   padding: 50px;
@@ -21,24 +21,24 @@ body {
   width: 100%;
   height: 50%;
 }
-  
+ 
 h1 {
   margin-bottom: 40px;
   font-size: 2em;
   color: #fff;
 }
- 
+
 .input-group {
   margin-bottom: 30px;
   text-align: left;
 }
- 
+
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
-  
+ 
 input[type="number"] {
   width: 100%;
   padding: 10px;
@@ -48,7 +48,7 @@ input[type="number"] {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
- 
+
 button {
   width: 100%;
   padding: 10px;
@@ -61,14 +61,15 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
-  box-shadow: 0 0 5px rgba(114, 245, 245, 0.849),
-  0 0 25px rgba(114, 245, 245, 0.849);
+  box-shadow : 0 0 5px rgba(114, 245, 245, 0.849),
+    0 0 25px rgba(114, 245, 245, 0.849);
 }
- 
+
 button:hover {
-  box-shadow: 0 0 5px rgba(114, 245, 245, 0.849),
-  0 0 25px rgba(114, 245, 245, 0.849), 0 0 50px rgba(114, 245, 245, 0.849),
-  0 0 100px rgba(114, 245, 245, 0.849), 0 0 200px rgba(114, 245, 245, 0.849);
+  box-shadow : 0 0 5px rgba(114, 245, 245, 0.849),
+    0 0 25px rgba(114, 245, 245, 0.849), 0 0 50px rgba(114, 245, 245, 0.849),
+    0 0 100px rgba(114, 245, 245, 0.849),
+    0 0 200px rgba(114, 245, 245, 0.849);
 }
 
 .change-due {
@@ -175,7 +176,7 @@ button:hover {
     font-size: 1.2em;
     margin-bottom: 20px;
   }
- 
+
   input[type="number"],
   button {
     font-size: 12px;
@@ -202,5 +203,3 @@ button:hover {
     font-size: 18px;
   }
 }
-
-
