@@ -47,7 +47,7 @@ you can access to my project through git clone
 
 
 ## Author 👩‍💻
-- Website: [website.com]( )
+- Website: [website.com](https://saqibi4213.github.io/Cash-register/)
 - LinkedIn: [Mehria saqibi](https://www.linkedin.com/in/mehria-saqibi-a386a41a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 - Email: [email](mosawermh@gmail.com)
 
