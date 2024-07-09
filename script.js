@@ -91,8 +91,8 @@ purchaseBtn.addEventListener('click', () => {
   if (change.status === 'INSUFFICIENT_FUNDS') {
     changeDueElement.textContent = 'Status: INSUFFICIENT_FUNDS';
   } else if (change.status === 'CLOSED') {
-    changeDueElement.textContent = `Status: CLOSED ${change.change.map((c) => `${c[0]}: $${c[1].toFixed(2)}`).join(' ')}`;
+    changeDueElement.innerHTML = `Status: CLOSED ${change.change.map((c) => `${c[0]}: $${c[1].toFixed(2)}`).join('<br>')}`;
   } else {
-    changeDueElement.textContent = `Status: OPEN ${change.change.map((c) => `${c[0]}: $${c[1].toFixed(2)}`).join(' ')}`;
+    changeDueElement.innerHTML = `Status: OPEN ${change.change.map((c) => `${c[0]}: $${c[1].toFixed(2)}`).join('<br>')}`;
   }
 });
