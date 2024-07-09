@@ -86,12 +86,11 @@ purchaseBtn.addEventListener('click', () => {
     return {
       status: 'OPEN',
       change: change.sort((a, b) => {
-      const aIndex = denominations.findIndex(([name]) => name === a[0]);
-      const bIndex = denominations.findIndex(([name]) => name === b[0]);
-      return bIndex - aIndex;
+        const aIndex = denominations.findIndex(([name]) => name === a[0]);
+        const bIndex = denominations.findIndex(([name]) => name === b[0]);
+        return bIndex - aIndex;
       }),
     };
-
   }
 
   const change = calculateChange(changeDue, cid);
