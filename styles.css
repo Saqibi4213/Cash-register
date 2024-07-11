@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: 'Verdana', sans-serif;
   background: url('background.jpg') no-repeat center center fixed;
-  backdrop-filter: blur(7px);
   background-size: cover;
   display: flex;
   justify-content: center;
