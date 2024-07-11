@@ -14,6 +14,33 @@ const cid = [
 const cashInput = document.getElementById('cash');
 const changeDueElement = document.getElementById('change-due');
 const purchaseBtn = document.getElementById('purchase-btn');
+const cashDrawerDisplay = document.getElementById('cash-drawer-display');
+
+const updateUI = (change) => {
+  cashDrawerDisplay.innerHTML = '<h2>Change in Cash Drawer</h2>';
+  const currencyNameMap = {
+    PENNY: 'Pennies',
+    NICKEL: 'Nickels',
+    DIME: 'Dimes',
+    QUARTER: 'Quarters',
+    ONE: 'Ones',
+    FIVE: 'Fives',
+    TEN: 'Tens',
+    TWENTY: 'Twenties',
+    'ONE HUNDRED': 'Hundreds',
+  };
+
+  cid.forEach((item) => {
+    const currencyName = currencyNameMap[item[0]];
+    const currentValue = parseFloat(item[1]).toFixed(2);
+    cashDrawerDisplay.innerHTML += `<p>${currencyName}: $${currentValue}</p>`;
+  });
+
+  change.forEach(([currency, amount]) => {
+    const currencyName = currencyNameMap[currency];
+    cashDrawerDisplay.innerHTML += `<p>${currencyName} to return: $${amount.toFixed(2)}</p>`;
+  });
+};
 
 purchaseBtn.addEventListener('click', () => {
   const cashGiven = parseFloat(cashInput.value);
@@ -102,4 +129,6 @@ purchaseBtn.addEventListener('click', () => {
   } else {
     changeDueElement.innerHTML = `Status: OPEN ${change.change.map((c) => `${c[0]}: $${c[1].toFixed(2)}`).join('<br>')}`;
   }
+
+  updateUI(change.change);
 });
