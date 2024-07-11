@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  backdrop-filter: blur(7px);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: #fff;
+}
+
+.container {
+  background: rgba(15, 5, 0, 0.753);
+  padding: 50px;
+  border-radius: 55px;
+  box-shadow: 0 0 50px rgba(97, 15, 0, 0.849);
+  text-align: center;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #fff;
+}
+
+.input-group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 25px;
+  background: #40f3f3d3;
+  color: #fff;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow:
+    0 0 5px rgba(114, 245, 245, 0.849),
+    0 0 25px rgba(114, 245, 245, 0.849);
+}
+
+button:hover {
+  box-shadow:
+    0 0 5px rgba(114, 245, 245, 0.849),
+    0 0 25px rgba(114, 245, 245, 0.849),
+    0 0 50px rgba(114, 245, 245, 0.849),
+    0 0 100px rgba(114, 245, 245, 0.849),
+    0 0 200px rgba(114, 245, 245, 0.849);
+}
+
+.change-due {
+  margin-top: 20px;
+  font-weight: bold;
+  color: rgb(14, 212, 163);
+}
+
+.cash-drawer-display {
+  margin-top: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.cash-drawer-display h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: #fff;
+}
+
+@media (max-width: 1199px) and (min-width: 1000px) {
+  .container {
+    padding: 45px;
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 35px;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  button {
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 1010px) and (min-width: 800px) {
+  .container {
+    padding: 40px;
+    max-width: 320px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 760px) {
+  .container {
+    padding: 35px;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    margin-bottom: 28px;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  button {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    max-width: 280px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 60px;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 18px;
+  }
+}
